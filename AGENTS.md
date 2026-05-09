@@ -1,4 +1,4 @@
-# Zelda.help - 塞尔达传说：王国之泪 完全攻略站
+# totk.help - 塞尔达传说：王国之泪 完全攻略站
 
 ## 项目概览
 这是一个静态网站项目，为《塞尔达传说：王国之泪》提供全面的中文攻略指南。网站完全使用原生HTML/CSS/JS构建，无外部依赖和CDN，适合GitHub Pages托管。
@@ -8,7 +8,7 @@
 - **语言**：HTML5, CSS3, JavaScript (ES6)
 - **图片格式**：WebP
 - **托管目标**：GitHub Pages
-- **域名**：Zelda.help
+- **域名**：totk.help
 
 ## 项目结构
 ```
