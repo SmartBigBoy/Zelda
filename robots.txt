@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://smartbigboy.github.io/Zelda/sitemap.xml
+Sitemap: https://totk.help/sitemap.xml
