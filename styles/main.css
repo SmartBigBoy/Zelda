@@ -173,7 +173,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: url('/images/hero-bg.webp') center/cover no-repeat;
+  background: url('images/hero-bg.webp') center/cover no-repeat;
   opacity: 0.25;
   z-index: 0;
 }
