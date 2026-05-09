@@ -1,33 +1,424 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="扣子编程，你的 AI 开发伙伴已就位" />
-    <title>扣子编程 - AI 开发伙伴</title>
-    <link rel="stylesheet" href="/styles/main.css" />
-  </head>
-  <body>
-    <div id="app">
-      <main class="main-wrapper">
-        <div class="content-container">
-          <img
-            src="https://lf-coze-web-cdn.coze.cn/obj/eden-cn/lm-lgvj/ljhwZthlaukjlkulzlp/coze-coding/icon/coze-coding.gif"
-            alt="扣子编程 Logo"
-            class="logo-image"
-          />
-          <div>
-            <div class="text-container">
-              <h1 class="heading">
-                应用开发中
-              </h1>
-              <p class="description">
-                请稍后，页面即将呈现
-              </p>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="塞尔达传说：王国之泪完全攻略 - 主线流程、神庙解谜、Boss攻略、烹饪配方、装备指南，助你顺利通关" />
+  <meta name="keywords" content="王国之泪,塞尔达传说,攻略,通关,神庙,Boss,配方,装备" />
+  <title>塞尔达传说：王国之泪 完全攻略 | Zelda.help</title>
+  <link rel="stylesheet" href="/styles/main.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/" class="site-logo">
+        <span class="logo-icon">Z</span>
+        <span>
+          <span class="logo-text">Zelda.help</span>
+          <span class="logo-sub">王国之泪完全攻略</span>
+        </span>
+      </a>
+      <nav class="main-nav">
+        <a href="/" class="active">首页</a>
+        <a href="/walkthrough.html">主线攻略</a>
+        <a href="/shrines.html">神庙攻略</a>
+        <a href="/bosses.html">Boss攻略</a>
+        <a href="/recipes.html">烹饪配方</a>
+        <a href="/equipment.html">装备指南</a>
+        <a href="/disclaimer.html">免责声明</a>
+      </nav>
+      <button class="menu-toggle" aria-label="菜单" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>塞尔达传说：王国之泪</h1>
+      <p class="subtitle">最全面的中文攻略指南 — 从新手入门到完美通关，<br>涵盖主线流程、152座神庙、Boss战术、烹饪配方与装备收集</p>
+      <div class="hero-badges">
+        <span class="hero-badge">📖 主线全流程</span>
+        <span class="hero-badge">⛩️ 152座神庙</span>
+        <span class="hero-badge">⚔️ Boss全攻略</span>
+        <span class="hero-badge">🍳 200+配方</span>
+        <span class="hero-badge">🛡️ 装备全收集</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main style="max-width:var(--max-width);margin:0 auto;padding:2rem 1.5rem;">
+
+    <!-- Quick Navigation Cards -->
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🗺️</span> 攻略导航</h2>
+      <div class="card-grid">
+
+        <div class="card">
+          <div class="card-icon green">📖</div>
+          <h3>主线攻略</h3>
+          <p>从空岛觉醒到击败盖侬多夫的完整主线流程，分章节详细讲解每个关键节点与解谜要点。</p>
+          <a href="/walkthrough.html" class="card-link">查看攻略 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon gold">⛩️</div>
+          <h3>神庙攻略</h3>
+          <p>152座神庙的详细解法，按区域分类，包含前置条件、解谜步骤与宝箱获取方式。</p>
+          <a href="/shrines.html" class="card-link">查看攻略 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon red">⚔️</div>
+          <h3>Boss攻略</h3>
+          <p>四大神殿Boss、盖侬多夫、莱奈尔、吉波等强敌的详细战术，包含推荐装备与打法思路。</p>
+          <a href="/bosses.html" class="card-link">查看攻略 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon blue">🍳</div>
+          <h3>烹饪配方</h3>
+          <p>200+实用配方：回血料理、攻防Buff、耐寒耐热、速度提升、精灵药等，按效果分类查阅。</p>
+          <a href="/recipes.html" class="card-link">查看配方 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon green">🛡️</div>
+          <h3>装备指南</h3>
+          <p>全防具套装收集、武器排行、余料建造搭配推荐、最强装备获取路线。</p>
+          <a href="/equipment.html" class="card-link">查看指南 →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon gold">🌟</div>
+          <h3>新手入门</h3>
+          <p>从零开始的冒险指南：初期推荐路线、关键能力获取、生存技巧与常见问题解答。</p>
+          <a href="#beginner-guide" class="card-link">开始阅读 →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Game Overview -->
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📜</span> 游戏概览</h2>
+      <div class="guide-block">
+        <h3>关于《王国之泪》</h3>
+        <p>《塞尔达传说：王国之泪》是任天堂于2023年5月12日发售的开放世界动作冒险游戏，为《旷野之息》的正统续作。故事延续前作结局，林克在海拉鲁大陆面对来自地下的全新威胁——被封印万年的盖侬多夫重现人间，天空浮现神秘浮岛，地下深潭展开广袤深渊。</p>
+        <h4>三大核心能力</h4>
+        <ul>
+          <li><strong>究极手</strong>：抓取并自由组合物体，打造车辆、飞行器、武器等无穷创造</li>
+          <li><strong>余料建造</strong>：将材料融合到武器/盾牌/箭矢上，创造独特组合效果</li>
+          <li><strong>通天术</strong>：穿越天花板到达上层空间，探索新路径</li>
+        </ul>
+        <h4>全新地图区域</h4>
+        <ul>
+          <li><strong>空岛</strong>：漂浮于天空的古代遗迹群，蕴含远古左纳乌文明秘密</li>
+          <li><strong>地底</strong>：与地表镜像对应的黑暗世界，遍布强敌与珍贵资源</li>
+          <li><strong>地表</strong>：焕然一新的海拉鲁大陆，新增洞穴、深井与废墟</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Beginner Guide -->
+    <section class="section" id="beginner-guide">
+      <h2 class="section-title"><span class="icon">🌟</span> 新手入门指南</h2>
+
+      <div class="guide-block">
+        <h3>初期推荐路线</h3>
+        <ol class="step-list">
+          <li>完成<strong>空岛序章</strong>，获取究极手、余料建造、通天术三大能力</li>
+          <li>降落地表后前往<strong>监视堡垒</strong>，与普尔亚对话解锁主线</li>
+          <li>优先完成<strong>风之神殿</strong>（利特村）获取滑翔伞升级，大幅提升探索效率</li>
+          <li>依次完成四大地区异变：风→火→水→雷</li>
+          <li>收集足够的心之容器后挑战最终Boss</li>
+        </ol>
+        <div class="tip-box">建议在挑战四大神殿之前，先将心之容器提升到5-7颗，初期可通过完成神庙获得祝福之光换取。</div>
+      </div>
+
+      <div class="guide-block">
+        <h3>初期生存技巧</h3>
+        <ul>
+          <li><strong>保暖</strong>：初期去寒冷地区前，先在监视堡垒购买防寒服或烹饪辣味料理</li>
+          <li><strong>耐热</strong>：前往火山地区前准备防火药或耐火铠</li>
+          <li><strong>武器耐久</strong>：善用余料建造提升武器攻击力，石块+树枝就是前期利器</li>
+          <li><strong>料理优先</strong>：5个生命榴莲煮一锅可满血复活，是最经济的回血手段</li>
+          <li><strong>探索地底</strong>：地底有大量左纳乌能源和珍稀材料，但需要先点亮发光树</li>
+          <li><strong>马匹登记</strong>：驯服马匹后到驿站登记，可随时召唤使用</li>
+        </ul>
+      </div>
+
+      <div class="guide-block">
+        <h3>关键能力获取顺序</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>能力</th>
+              <th>获取地点</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>究极手</td>
+              <td>空岛·觉醒室</td>
+              <td>抓取组合物体，核心创造能力</td>
+            </tr>
+            <tr>
+              <td>余料建造</td>
+              <td>空岛·古塔尼罗神庙</td>
+              <td>将材料融合到武器和盾牌上</td>
+            </tr>
+            <tr>
+              <td>通天术</td>
+              <td>空岛·古乔尼神庙</td>
+              <td>穿越天花板到达上层</td>
+            </tr>
+            <tr>
+              <td>倒转乾坤</td>
+              <td>空岛·纳乔亚哈神庙</td>
+              <td>让物体沿运动轨迹倒退</td>
+            </tr>
+            <tr>
+              <td>滑翔伞</td>
+              <td>完成风之神殿后</td>
+              <td>从高空安全降落，探索必备</td>
+            </tr>
+            <tr>
+              <td>相机</td>
+              <td>监视堡垒·罗贝利</td>
+              <td>拍照记录图鉴，解锁图鉴功能</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Walkthrough Preview -->
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📖</span> 主线流程预览</h2>
+      <div class="guide-block">
+        <h3>章节概览</h3>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>章节</th>
+              <th>名称</th>
+              <th>主要内容</th>
+              <th>推荐心数</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>序章</td>
+              <td>空岛觉醒</td>
+              <td>获取四大能力，离开空岛</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>第一章</td>
+              <td>前往地表</td>
+              <td>抵达监视堡垒，解锁主线任务</td>
+              <td>3-5</td>
+            </tr>
+            <tr>
+              <td>第二章</td>
+              <td>地区异变</td>
+              <td>完成四大地区神殿任务</td>
+              <td>5-10</td>
+            </tr>
+            <tr>
+              <td>第三章</td>
+              <td>寻找大师之剑</td>
+              <td>龙之泪记忆、拔取大师之剑</td>
+              <td>10+</td>
+            </tr>
+            <tr>
+              <td>第四章</td>
+              <td>海拉鲁城堡危机</td>
+              <td>城堡地下的秘密与幻影盖侬</td>
+              <td>12+</td>
+            </tr>
+            <tr>
+              <td>终章</td>
+              <td>讨伐盖侬多夫</td>
+              <td>深入地底，最终决战</td>
+              <td>15+</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="info-box">各章节详细攻略请查看<a href="/walkthrough.html" style="color:var(--color-blue);">主线攻略页面</a>，包含每一步的解谜方法与战斗技巧。</div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <h2 class="section-title"><span class="icon">❓</span> 常见问题</h2>
+
+      <div id="faq-list">
+        <div class="accordion-item" data-searchable="心之容器 祈祷女神 增加心">
+          <button class="accordion-header">
+            <span>如何增加心之容器（生命值）？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>每完成4座神庙，获得4个祝福之光，即可在女神像处祈祷换取1颗心之容器或1格精力槽。前期建议优先增加心之容器到7-10颗，提升生存能力。后期可根据需要平衡心与精力。</p>
+              <p><strong>女神像位置</strong>：监视堡垒、各村庄、哈特诺村等地点均有分布。</p>
             </div>
           </div>
         </div>
-      </main>
+
+        <div class="accordion-item" data-searchable="大师之剑 获取 拔剑">
+          <button class="accordion-header">
+            <span>如何获取大师之剑？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>需要满足两个条件：</p>
+              <ol>
+                <li>收集至少<strong>12个龙之泪</strong>（找到12处地画并触摸），解锁白龙的记忆</li>
+                <li>拥有<strong>2圈以上的精力槽</strong>（至少13颗心之容器的等效精力）</li>
+              </ol>
+              <p>完成龙之泪后，白龙会在海拉鲁上空飞行，飞到白龙头上即可拔取大师之剑。大师之剑耐久耗尽后10分钟自动恢复。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-searchable="背包扩展 伯库林 克洛格">
+          <button class="accordion-header">
+            <span>如何扩展背包容量？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>找到伯库林（克洛格种子兑换NPC），用克洛格种子兑换武器/弓箭/盾牌槽位。伯库林第一次出现在监视堡垒东侧的路口，之后会在各大驿站出现。</p>
+              <p><strong>推荐优先级</strong>：武器槽 > 盾牌槽 > 弓箭槽，武器消耗最大，优先扩展。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-searchable="地底 探索 发光树 黑暗">
+          <button class="accordion-header">
+            <span>地底如何探索？有什么技巧？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>地底与地表镜像对应，但完全黑暗。探索要点：</p>
+              <ul>
+                <li><strong>点亮发光树</strong>：每棵树对应地表的神庙位置，是地底探索的路标</li>
+                <li><strong>暗视药</strong>：烹饪暗夜萤火虫+怪物素材，临时增加视野</li>
+                <li><strong>发光花</strong>：地底随处可见的蓝色花，引导你找到神庙和树根</li>
+                <li><strong>左纳乌装置</strong>：地底有大量电池和装置，可用于制造载具</li>
+                <li><strong>珍稀资源</strong>：地底有唯一出现的材料和升级素材</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-searchable="电池 扩展 左纳乌 能源">
+          <button class="accordion-header">
+            <span>如何扩展电池容量？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>收集左纳乌能源结晶，前往空岛的大鼓隆（左纳乌加工NPC）处兑换电池。100个结晶可兑换1格电池。能源结晶来源：</p>
+              <ul>
+                <li>地底的宝箱和击败强敌</li>
+                <li>空岛的矿脉采集</li>
+                <li>完成特定任务奖励</li>
+                <li>击败依盖队成员掉落</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" data-searchable="余料建造 最强搭配 推荐">
+          <button class="accordion-header">
+            <span>余料建造最强搭配是什么？</span>
+            <span class="arrow">▼</span>
+          </button>
+          <div class="accordion-body">
+            <div class="accordion-body-inner">
+              <p>余料建造的效果取决于融合的素材，以下是几个强力搭配：</p>
+              <ul>
+                <li><strong>武器+白银莱奈尔刃角</strong>：攻击力极高，前期最强输出</li>
+                <li><strong>盾牌+冰岩</strong>：格挡时冻住敌人，创造攻击机会</li>
+                <li><strong>箭+冰冻花/火焰果</strong>：元素箭，免费替代火箭/冰箭</li>
+                <li><strong>武器+怪物眼睛</strong>：投掷时自动追踪敌人</li>
+                <li><strong>盾牌+火箭</strong>：紧急升空，滑翔搭配神技</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section text-center" style="padding:2rem 0;">
+      <div style="display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;">
+        <div>
+          <div style="font-size:2.5rem;font-family:var(--font-heading);color:var(--color-primary);font-weight:bold;">152</div>
+          <div style="font-size:0.9rem;color:var(--color-text-light);">神庙攻略</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-family:var(--font-heading);color:var(--color-gold);font-weight:bold;">200+</div>
+          <div style="font-size:0.9rem;color:var(--color-text-light);">烹饪配方</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-family:var(--font-heading);color:var(--color-red);font-weight:bold;">30+</div>
+          <div style="font-size:0.9rem;color:var(--color-text-light);">Boss战术</div>
+        </div>
+        <div>
+          <div style="font-size:2.5rem;font-family:var(--font-heading);color:var(--color-blue);font-weight:bold;">100+</div>
+          <div style="font-size:0.9rem;color:var(--color-text-light);">装备详解</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>攻略导航</h4>
+        <a href="/walkthrough.html">主线攻略</a>
+        <a href="/shrines.html">神庙攻略</a>
+        <a href="/bosses.html">Boss攻略</a>
+        <a href="/recipes.html">烹饪配方</a>
+        <a href="/equipment.html">装备指南</a>
+      </div>
+      <div class="footer-col">
+        <h4>快速入口</h4>
+        <a href="#beginner-guide">新手入门</a>
+        <a href="/walkthrough.html#master-sword">大师之剑</a>
+        <a href="/shrines.html#sky-islands">空岛神庙</a>
+        <a href="/equipment.html#armor-sets">防具套装</a>
+      </div>
+      <div class="footer-col">
+        <h4>关于本站</h4>
+        <a href="/disclaimer.html">免责声明</a>
+        <a href="/disclaimer.html#copyright">版权声明</a>
+        <a href="/disclaimer.html#contact">联系我们</a>
+      </div>
     </div>
-  </body>
+    <div class="footer-disclaimer">
+      <strong>免责声明：</strong>本站为玩家自发创建的非官方粉丝攻略站点，与任天堂（Nintendo）无任何关联。游戏名称、角色名称、商标等均为任天堂株式会社所有。本站所有攻略内容均为原创编写，仅供学习交流使用。如有任何侵权内容，请及时联系我们，我们将立即删除。<br>
+      <strong>联系方式：</strong>如发现侵权内容，请发送邮件至 contact@zelda.help，我们将在48小时内处理。
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Zelda.help - 非官方粉丝攻略站 | 本站与任天堂无关
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="回到顶部">↑</button>
+
+  <script src="/js/main.js"></script>
+</body>
 </html>
